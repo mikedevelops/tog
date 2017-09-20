@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tog.js</title>
+    <style>
+        body {
+            padding: 1rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        *[aria-hidden="true"] {
+            display: none;
+        }
+
+        button {
+            display: block;
+            font-size: 1.25rem;
+            padding: 1rem;
+        }
+
+        pre {
+            background-color: white;
+            border: 1px solid red;
+            bottom: 1rem;
+            overflow: scroll;
+            padding: 1rem;
+            position: fixed;
+            right: 1rem;
+            top: 1rem;
+        }
+
+        section {
+            border-top: 1px solid black;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Tog.js</h1>
+
+    <section>
+        <h2 class="title">Single toggle</h2>
+        <p class="description">Toggle a single content item.</p>
+        <button class="toggle" data-tog="single">Toggle single</button>
+        <div id="single">
+            <p>Lorizzle ipsizzle uhuh ... yih! brizzle amizzle, consectetizzle adipiscing boom shackalack. Nullam bow wow wow boom shackalack, fizzle volutpizzle, fo shizzle get down get down, gravida vizzle, away. Pellentesque crackalackin gangsta. Sizzle erizzle. Fo shizzle izzle dolor dapibus fo shizzle tempizzle nizzle. Maurizzle pellentesque shit et turpizzle. Shit gizzle tortor. Away things rhoncizzle hizzle. In hac fo shizzle my nizzle platea dictumst. dapibus. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle tellus break yo neck, yall, shit eu, mattis mofo, eleifend vitae, nunc. Izzle suscipizzle. Integer semper velit sizzle shizzle my nizzle crocodizzle.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="title">Multiple content toggle</h2>
+        <p class="description">Toggle multiple content items that are not siblings or children of one another</p>
+        <button class="toggle" data-tog="multi">Toggle multiple</button>
+        <div>
+            <div class="multi">
+                <p>Lorizzle ipsizzle uhuh ... yih! brizzle amizzle, consectetizzle adipiscing boom shackalack. Nullam bow wow wow boom shackalack, fizzle volutpizzle, fo shizzle get down get down, gravida vizzle, away. Pellentesque crackalackin gangsta. Sizzle erizzle. Fo shizzle izzle dolor dapibus fo shizzle tempizzle nizzle. Maurizzle pellentesque shit et turpizzle. Shit gizzle tortor. Away things rhoncizzle hizzle. In hac fo shizzle my nizzle platea dictumst. dapibus. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle tellus break yo neck, yall, shit eu, mattis mofo, eleifend vitae, nunc. Izzle suscipizzle. Integer semper velit sizzle shizzle my nizzle crocodizzle.</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="multi">
+                <p>Lorizzle ipsizzle uhuh ... yih! brizzle amizzle, consectetizzle adipiscing boom shackalack. Nullam bow wow wow boom shackalack, fizzle volutpizzle, fo shizzle get down get down, gravida vizzle, away. Pellentesque crackalackin gangsta. Sizzle erizzle. Fo shizzle izzle dolor dapibus fo shizzle tempizzle nizzle. Maurizzle pellentesque shit et turpizzle. Shit gizzle tortor. Away things rhoncizzle hizzle. In hac fo shizzle my nizzle platea dictumst. dapibus. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle tellus break yo neck, yall, shit eu, mattis mofo, eleifend vitae, nunc. Izzle suscipizzle. Integer semper velit sizzle shizzle my nizzle crocodizzle.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="title">Group toggles</h2>
+        <p class="description">Assign a set of toggles to a group in order to create an accordion, opening a toggle will close all members of the group.</p>
+        <button class="toggle" data-tog="group-toggle-1" data-tog-group="group-toggles">Group Toggle</button>
+        <div id="group-toggle-1">
+            <p>Lorizzle ipsizzle uhuh ... yih! brizzle amizzle, consectetizzle adipiscing boom shackalack. Nullam bow wow wow boom shackalack, fizzle volutpizzle, fo shizzle get down get down, gravida vizzle, away. Pellentesque crackalackin gangsta. Sizzle erizzle. Fo shizzle izzle dolor dapibus fo shizzle tempizzle nizzle. Maurizzle pellentesque shit et turpizzle. Shit gizzle tortor. Away things rhoncizzle hizzle. In hac fo shizzle my nizzle platea dictumst. dapibus. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle tellus break yo neck, yall, shit eu, mattis mofo, eleifend vitae, nunc. Izzle suscipizzle. Integer semper velit sizzle shizzle my nizzle crocodizzle.</p>
+        </div>
+
+        <button class="toggle" data-tog="group-toggle-2" data-tog-group="group-toggles">Group Toggle</button>
+        <div id="group-toggle-2">
+            <p>Lorizzle ipsizzle uhuh ... yih! brizzle amizzle, consectetizzle adipiscing boom shackalack. Nullam bow wow wow boom shackalack, fizzle volutpizzle, fo shizzle get down get down, gravida vizzle, away. Pellentesque crackalackin gangsta. Sizzle erizzle. Fo shizzle izzle dolor dapibus fo shizzle tempizzle nizzle. Maurizzle pellentesque shit et turpizzle. Shit gizzle tortor. Away things rhoncizzle hizzle. In hac fo shizzle my nizzle platea dictumst. dapibus. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle tellus break yo neck, yall, shit eu, mattis mofo, eleifend vitae, nunc. Izzle suscipizzle. Integer semper velit sizzle shizzle my nizzle crocodizzle.</p>
+        </div>
+
+        <button class="toggle" data-tog="group-toggle-3" data-tog-group="group-toggles">Group Toggle</button>
+        <div id="group-toggle-3">
+            <p>Lorizzle ipsizzle uhuh ... yih! brizzle amizzle, consectetizzle adipiscing boom shackalack. Nullam bow wow wow boom shackalack, fizzle volutpizzle, fo shizzle get down get down, gravida vizzle, away. Pellentesque crackalackin gangsta. Sizzle erizzle. Fo shizzle izzle dolor dapibus fo shizzle tempizzle nizzle. Maurizzle pellentesque shit et turpizzle. Shit gizzle tortor. Away things rhoncizzle hizzle. In hac fo shizzle my nizzle platea dictumst. dapibus. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle tellus break yo neck, yall, shit eu, mattis mofo, eleifend vitae, nunc. Izzle suscipizzle. Integer semper velit sizzle shizzle my nizzle crocodizzle.</p>
+        </div>
+    </section>
+
+    <pre id="console"></pre>
+</body>
+</html>
